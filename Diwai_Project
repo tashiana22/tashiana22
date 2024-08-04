@@ -37,6 +37,10 @@
 <main>
   <section id="section1">
     <h2>Home</h2>
+<div class ="home_content">
+<p>Diwai Sales and Tok Save where you find small-mnedium businesses that will help you on the lookout for something incredible!</p>
+<h3>Small Business. Big Hearts. Your Satisfaction. Our Delight.</h3>
+</div>
   </section>
   <section id="section2">
     <h2>SME</h2>
