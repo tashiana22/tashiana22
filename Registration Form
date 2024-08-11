@@ -8,28 +8,38 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #f0f2f5;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
         }
 
         .form-container {
             background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
             width: 100%;
         }
 
         h3 {
             color: #333;
-            font-size: 20px;
-            margin-bottom: 15px;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        ol {
+            padding-left: 0;
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 30px;
         }
 
         label {
@@ -43,64 +53,82 @@
         input[type="number"],
         input[type="password"] {
             width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
+            padding: 12px;
+            margin-bottom: 15px;
             border: 1px solid #ccc;
-            border-radius: 4px;
+            border-radius: 6px;
             box-sizing: border-box;
             font-size: 16px;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        input[type="password"]:focus {
+            background-color: #e9ecef;
+            outline: none;
+            border-color: #80bdff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
         }
 
         button {
             width: 100%;
-            background-color: #28a745;
+            background-color: #007bff;
             color: #fff;
-            padding: 10px;
+            padding: 12px;
             border: none;
-            border-radius: 4px;
+            border-radius: 6px;
             font-size: 16px;
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
 
         button:hover {
-            background-color: #218838;
+            background-color: #0056b3;
         }
 
         p {
             font-size: 14px;
             color: #666;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
 
         hr {
             border: none;
-            border-top: 1px solid #eee;
-            margin: 20px 0;
+            border-top: 1px solid #ddd;
+            margin: 30px 0;
+        }
+
+        @media (max-width: 600px) {
+            .form-container {
+                padding: 20px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
 
 <body>
     <div class="form-container">
-        <ol>
-            <li>
-                <h3>Student Details</h3>
-                <form>
+        <form>
+            <ol>
+                <li>
+                    <h3>Student Details</h3>
                     <label for="name">Student Name:</label>
                     <input type="text" id="name" placeholder="Full Name" name="name" required>
 
                     <label for="idnumber">ID Number:</label>
-                    <input type="number" id="idnumber" placeholder="000000" name="idnumber" min="1800" max="259999"
-                        required>
-                </form>
-            </li>
+                    <input type="number" id="idnumber" placeholder="000000" name="idnumber" min="1800" max="259999" required>
+                </li>
 
-            <hr>
+                <hr>
 
-            <li>
-                <h3>Business or Club Details</h3>
-                <form>
+                <li>
+                    <h3>Business or Club Details</h3>
                     <label for="bcname">Business/Club Name:</label>
                     <input type="text" id="bcname" placeholder="Business or Club Name" name="bcname" required>
 
@@ -115,14 +143,12 @@
 
                     <label for="facebook">Facebook Name:</label>
                     <input type="text" id="facebook" placeholder="Facebook (Optional)" name="facebook">
-                </form>
-            </li>
+                </li>
 
-            <hr>
+                <hr>
 
-            <li>
-                <h3>Account Details</h3>
-                <form>
+                <li>
+                    <h3>Account Details</h3>
                     <label for="username">Username:</label>
                     <input type="text" id="username" placeholder="Username" name="username" required>
 
@@ -137,10 +163,11 @@
 
                     <p>I have read and understood the terms and conditions.</p>
                     <button type="submit">Submit</button>
-                </form>
-            </li>
-        </ol>
+                </li>
+            </ol>
+        </form>
     </div>
 </body>
 
 </html>
+
