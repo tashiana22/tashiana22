@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diwai Sales & Tok Save</title>
+<!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  header {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #f8f9fa; /* Light grey */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+
+  header h1 {
+    margin: 20px 0;
+    display: inline-block;
+    animation: slide-in 10s linear infinite; /* Animation for sliding effect */
+    color: #2c3e50; /* Dark grey-blue */
+    margin: 20px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+@keyframes slide-in {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  nav {
+    list-style: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background: #2c3e50; /* Dark grey-blue */
+    box-shadow: 2px 0px 5px rgba(0,0,0,0.5);
+    padding-top: 100px;
+  }
+
+  nav ul {
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 15px 0;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  nav ul li a:hover {
+    background: #34495e; /* Slightly lighter grey-blue */
+    color: #f39c12; /* Warm yellow */
+  }
+
+  main {
+    margin-left: 200px;
+    padding-top: 100px;
+    width: calc(100% - 200px); /* Adjust width to account for fixed sidebar */
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: inherit; /* Use inherited text color */
+  }
+
+  #section1 { background: linear-gradient(-45deg, #f8f9fa 60%, #f39c12 0%); /* Light grey and warm yellow */ }
+  #section2 { background: linear-gradient(-45deg, #f8f9fa 50%, #f39c12 0%); }
+  #section3 { background: linear-gradient(-45deg, #f8f9fa 40%, #f39c12 0%); /* Light grey and dark grey-blue */ }
+  #section4 { background: linear-gradient(-45deg, #f8f9fa 30%, #f39c12 0%); }
+  #section5 { background: linear-gradient(-45deg, #f8f9fa 20%, #f39c12 0%); /* Light grey and slightly lighter grey-blue */ }
+
+  section h2 {
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Diwai Sales & Tok Save</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#section1">Home</a></li>
+    <li><a href="#section2">SME</a></li>
+    <li><a href="#section3">Club Events</a></li>
+    <li><a href="#section4">Send SME</a></li>
+    <li><a href="#section5">About</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="section1">
+   <div class="About_Container1">
+      <div class="card1">
+        <h3>Welcome to Diwai Sales...</h3>
+        <p>Diwai Sales and Tok Save where you find small-mnedium businesses that will help you on the lookout for something incredible!</p>
+      </div>
+    </div>
+    <div class="About_Container2">
+      <div class="card2">
+        <h3>Our Vision...</h3>
+        <p>Small Business. Big Hearts. Your Satisfaction. Our Delight.</p>
+      </div>
+    </div>
+
+
+  </section>
+  <section id="section2">
+    <h2>SME</h2>
+  </section>
+  <section id="section3">
+    <h2>Club Events</h2>
+  </section>
+  <section id="section4">
+    <h2>Send SME</h2>
+    <a href="pages/registration.html" ><img src="img/register.png" ></a>
+  </section>
+  <section id="section5">
+    <div class="About_Container1">
+      <div class="card1">
+        <h3>Who we are...</h3>
+        <p>Our group of energetic, youthful students is striving to provide digitalization to student businesses at their fingertips.</p>
+      </div>
+    </div>
+    <div class="About_Container2">
+      <div class="card2">
+        <h3>What we do...</h3>
+        <p>Our goal is to assist Divine Word University studetnt-run businesses in reaching out to the larger community by helping them to promote on digital platforms.</p> 
+      </div>
+    </div>
+<style>
+.About_Container1, .About_Container2 {
+  display: flex;
+  gap: 20px; /* Adds space between the cards */
+  flex-wrap: wrap; /* Allows cards to wrap to the next line if needed */
+  margin: 20px; /* Adds margin around the container */
+  align-items: stretch; /* Ensures all cards are the same height */
+}
+
+.card1, .card2 {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  flex: 1; /* Makes all cards take up equal space */
+  min-width: 200px; /* Ensures cards have a minimum width */
+  min-height: 250px; /* Ensures cards have a minimum height */
+  max-width: 500px; /* Optional: Ensures cards do not exceed a maximum width */
+  height: 300%; /* Ensures all cards take the full height of the container */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures content is evenly spaced within the card */
+  overflow: hidden; /* Prevents overflow */
+}
+
+</style>
+
+  </section>
+  </section>
+</main>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
