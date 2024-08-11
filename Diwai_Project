@@ -51,8 +51,10 @@
   <section id="section4">
     <h2>Send SME</h2>
   <div class ="Registration Form">
-  <p>To registar your SME, click & complete form and be part of this community!</p>
-  <button type="Register"> Register </button>
+  <p>To register your SME, click & complete form and be part of this community!</p>
+  <button type="Register"> Register 
+  <a href="Registration Form"> </a>
+  </button>
   </div>
   </section>
   <section id="section5">
