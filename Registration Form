@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Registration Form</title>
-     <style>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -26,16 +29,12 @@
         h3 {
             color: #333;
             font-size: 20px;
-            margin-bottom: 10px;
-        }
-
-        form {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         label {
             display: block;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
             font-weight: bold;
             color: #555;
         }
@@ -45,7 +44,7 @@
         input[type="password"] {
             width: 100%;
             padding: 10px;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             border: 1px solid #ccc;
             border-radius: 4px;
             box-sizing: border-box;
@@ -80,52 +79,68 @@
             margin: 20px 0;
         }
     </style>
+</head>
 
-    </head>
-    <body>
-    <a href="Registration Form.html">Registartion Form</a>
+<body>
+    <div class="form-container">
         <ol>
-            <h3><li>Student Details</li></h3>
-            <h4>
+            <li>
+                <h3>Student Details</h3>
                 <form>
-                    <label for="name"> Student Name:</label>
-                        <input type="text" id="name" placeholder="Full Name" name="name"><br>
-                    <label for="idnumber"> ID Number</label>
-                        <input  type="number" id="quantity" placeholder="000000" name="quantity" min="1800" max="999999"><br>
+                    <label for="name">Student Name:</label>
+                    <input type="text" id="name" placeholder="Full Name" name="name" required>
+
+                    <label for="idnumber">ID Number:</label>
+                    <input type="number" id="idnumber" placeholder="000000" name="idnumber" min="1800" max="259999"
+                        required>
                 </form>
-            </h4>
+            </li>
+
             <hr>
-            <h3><li>Business or Club Details</li></h3>
-            <h4>  
+
+            <li>
+                <h3>Business or Club Details</h3>
                 <form>
-                    <label for="bcname"> Business/Club Name</label>
-                        <input type="text" id="bcname" placeholder="Business or Club Name" name="bcname"><br>
-                    <label for="cdetails"> Business Phone Number</label>
-                        <input type="number" id="quantity" placeholder="+675 000 00 000" name="quantity" min="+675 000 00 000" max="+675 999 99 999"><br>
-                    <label for="emailaddress"> Business Email Address</label>
-                        <input type="text" id="emailaddress" placeholder="Business Email (optional)" name="emailaddress"><br>
-                    <label for="instagram"> Instagram Name</label>
-                        <input type="text" id="instagram" placeholder="Instgram (Optional)" name="instagram"><br>
-                    <label for="facebook">Facebook Name</label>
-                        <input type="text" id="facebook" placeholder="Facebook (Optional)" name="facebook"><br>
-                   </form>
-            </h4>
-            <hr>
-            <h3><li>Account Details</li></h3>
-            <h4>
-                <form>
-                    <label for="username"> Username</label>
-                        <input type="text" id="username" placeholder="Username" name="username"><br>
-                    <label for="password"> Password</label>
-                        <input type="password" id="password" placeholder="Password" name="password" pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$" title="Password must contain at least one number, one alphabet, one symbol, and be at least 8 characters long" required/><br>
-                    <label for="repassword"> Re-type Password:</label>
-                        <input type="password" id="repassword" placeholder="Re-type Password" name="repassword" required/><br>
-                    <p>I have read and undertood the terms and conditions.</p>
-                    <button type="submit">
-                        Submit
-                    </button>
+                    <label for="bcname">Business/Club Name:</label>
+                    <input type="text" id="bcname" placeholder="Business or Club Name" name="bcname" required>
+
+                    <label for="cdetails">Business Phone Number:</label>
+                    <input type="text" id="cdetails" placeholder="+675 000 00 000" name="cdetails" required>
+
+                    <label for="emailaddress">Business Email Address:</label>
+                    <input type="text" id="emailaddress" placeholder="Business Email (optional)" name="emailaddress">
+
+                    <label for="instagram">Instagram Name:</label>
+                    <input type="text" id="instagram" placeholder="Instagram (Optional)" name="instagram">
+
+                    <label for="facebook">Facebook Name:</label>
+                    <input type="text" id="facebook" placeholder="Facebook (Optional)" name="facebook">
                 </form>
-            </h4>
+            </li>
+
+            <hr>
+
+            <li>
+                <h3>Account Details</h3>
+                <form>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" placeholder="Username" name="username" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Password" name="password"
+                        pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$"
+                        title="Password must contain at least one number, one alphabet, one symbol, and be at least 8 characters long"
+                        required>
+
+                    <label for="repassword">Re-type Password:</label>
+                    <input type="password" id="repassword" placeholder="Re-type Password" name="repassword" required>
+
+                    <p>I have read and understood the terms and conditions.</p>
+                    <button type="submit">Submit</button>
+                </form>
+            </li>
         </ol>
-    </body>
+    </div>
+</body>
+
 </html>
