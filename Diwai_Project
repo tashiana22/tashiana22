@@ -11,7 +11,7 @@
 <body>
 
 <header>
-  <h1>Diwai Sales & Tok Save</h1>
+  <h1> <marquee>Diwai Sales & Tok Save</marquee></h1>
 </header>
 
 <nav class="navbar navbar-dark bg-dark fixed-top">
