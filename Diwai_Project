@@ -52,8 +52,8 @@
     <h2>Send SME</h2>
   <div class ="Registration Form">
   <p>To register your SME, click & complete form and be part of this community!</p>
-  <button type="Register"> Register 
-  <a href="Registration Form.html">Registration Form</a>
+  <button type="Register"> 
+  <a href="Registration Form.html">Register</a>
   </button>
   </div>
   </section>
